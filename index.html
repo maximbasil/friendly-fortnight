@@ -3,44 +3,219 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MaximBasil | Creative Web Developer in Kenya</title>
-  <meta name="description" content="Basil builds art-driven, high-converting websites in Kenya. Landing pages begin at Ksh 14,999. Chat via WhatsApp to get visible online fast." />
-  <meta name="keywords" content="web design Kenya, landing page Kenya, creative web developer, affordable web design Kenya, SEO web designer Kenya" />
+  <meta name="description" content="Basil’s soulful digital portfolio — a fusion of creative design, deep storytelling, and colorful expression." />
+  <meta name="keywords" content="Basil, artist, web design, portfolio, creative expression, storytelling, Kenya, doodle art, graffiti" />
+  <meta name="author" content="Maxim Basil" />
+  <title>Maxim Basil | Artist & Web Developer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('images/doodle1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      color: maroon;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #444;
+    }
+
+    section {
+      padding: 60px 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: url('images/doodle3.jpg') no-repeat center;
+      background-size: contain;
+    }
+
+    .about img {
+      width: 180px;
+      height: auto;
+      border-radius: 10px;
+      margin: 10px;
+      object-fit: cover;
+    }
+
+    .packages {
+      background: url('images/graffiti1.jpg') no-repeat center center;
+      background-size: cover;
+      color: #fff;
+    }
+
+    .packages h2 {
+      text-align: center;
+      font-size: 2.5em;
+      color: gold;
+    }
+
+    .package-grid {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .package {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      margin: 15px;
+      border-radius: 12px;
+      width: 280px;
+      text-align: center;
+    }
+
+    .package h3 {
+      color: #f4c542;
+    }
+
+    .seo {
+      background: url('images/doodle2.jpg') no-repeat center center;
+      background-size: cover;
+      color: #fff;
+    }
+
+    .seo h2 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #f9f9f9;
+    }
+
+    .faq {
+      background-color: #fff7f0;
+      padding: 60px 20px;
+      margin: 40px 0;
+      border-radius: 12px;
+      color: #333;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .faq h2 {
+      text-align: center;
+      font-size: 2.5em;
+      color: maroon;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .faq h3::before {
+      content: '❓';
+      margin-right: 10px;
+      color: #ff6347;
+    }
+
+    .faq h3 {
+      font-size: 1.4em;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      color: #222;
+      display: flex;
+      align-items: center;
+    }
+
+    .faq p {
+      font-size: 1.05em;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      color: #555;
+      padding-left: 5px;
+    }
+
+    .footer {
+      background-color: maroon;
+      color: #fff;
+      text-align: center;
+      padding: 30px 10px;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .whatsapp-float img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      transition: transform 0.3s;
+    }
+
+    .whatsapp-float img:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      .package-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
-  <section class="hero" role="banner">
-    <h1>MaximBasil — Web Artist & Strategist</h1>
-    <p>Creative web designer in Kenya. I blend art and strategy to build clean, fast, SEO-ready websites.</p>
+
+  <header>
+    <h1>Maxim Basil</h1>
+    <p>Artist | Web Developer | Strategy Consultant</p>
+  </header>
+
+  <section class="about">
+    <h2>My Story</h2>
+    <img src="images/profile1.jpg" alt="Maxim Basil">
+    <img src="images/profile2.jpg" alt="Maxim Basil">
+    <p>I’m a Kenyan creative blending code, emotion, and art to create web experiences that feel alive. This is more than design — it's healing, expression, and depth through digital space.</p>
   </section>
 
-  <section class="story section" id="about">
-    <h2>About Me</h2>
-    <p>I built my first website at age 15 in 2017 while attending JKUAT via a Zalego scholarship. My project—a job recruitment platform for home workers—took a year to develop under mentor Mr. Alfred Omondi’s guidance. We sold it for Ksh 45,000, teaching me early on the power of websites and apps to transform businesses.</p>
-    <p>Since then, I’ve grown into a full-stack creative: front-end developer, designer, business strategist, and marketer. I leverage AI tools and design thinking to deliver custom sites in under a week.</p>
-    <div class="image-gallery" aria-label="Photos of Basil">
-      <img src="images/me1.jpg" alt="Basil smiling, portrait 1" />
-      <img src="images/me2.jpg" alt="Workspace photo of Basil, portrait 2" />
-      <img src="images/me3.jpg" alt="Basil working on a laptop, portrait 3" />
+  <section class="services">
+    <h2>What I Can Build for You</h2>
+    <div class="package-grid">
+      <div class="package">
+        <h3>🎨 Portfolio Website</h3>
+        <p>1 elegant, artsy, expressive personal website tailored for your needs<br>starting KSh12,999</p>
+      </div>
+      <div class="package">
+        <h3>🛒 Business Landing Pages</h3>
+        <p>SEO-optimized 3–5 landing pages<br>starting KSh24,999</p>
+      </div>
+      <div class="package">
+        <h3>🛍️ E-commerce Site</h3>
+        <p>Up to 10 Pages + Blog + SEO<br>starting KSh54,999</p>
+      </div>
     </div>
   </section>
 
-  <section class="packages section" id="services">
-    <h2>Web Design Packages</h2>
-    <ul>
-      <li><strong>Landing Page</strong> – Starts at <span>Ksh 14,999</span></li>
-      <li><strong>Business Website</strong> – Multi-page site from <span>Ksh 29,999</span></li>
-      <li><strong>E-Commerce Store</strong> – Product listings & checkout from <span>Ksh 54,999</span></li>
-      <li><strong>Custom UI/UX & Branding</strong> – Request a personalized quote</li>
-    </ul>
+  <section class="seo">
+    <h2>What is SEO? Why does it matter</h2>
+    <p style="max-width: 800px; margin: auto; padding: 20px; background-color: rgba(0,0,0,0.6); border-radius: 10px;">
+      SEO stands for Search Engine Optimization. It's how your website becomes visible on Google. A site without SEO is like a billboard in the desert — no one sees it.
+      <br><br>
+      After your site is built, SEO helps it get found through strategic keywords, metadata, site structure, page speed, mobile optimization, and more.
+      <br><br>
+      With an SEO strategy, your site becomes a living business tool: discoverable, relevant, and visible. From Google Maps listings to blog traffic, SEO connects your audience to your business.
+    </p>
   </section>
 
-  <section class="seo section" id="seo">
-    <h2>Why SEO Matters</h2>
-    <p>SEO (Search Engine Optimization) helps potential clients find you when searching online. I guide you through each step—from keyword research like “women’s clothing Nairobi” to optimizing page loading speed and content structure.</p>
-    <p>With simple SEO, your site goes from just existing to becoming discoverable, driving traffic and converting leads into customers.</p>
-  </section>
-
-  <section class="faq section" id="faq">
+  <section class="faq" id="faq">
     <h2>Frequently Asked Questions</h2>
     <h3>How long does it take to build a website?</h3>
     <p>Most projects take between 3 to 7 days depending on complexity and assets provided.</p>
@@ -50,17 +225,13 @@
     <p>Yes — every project includes on-page SEO optimization for mobile-friendliness, meta tags, and performance.</p>
   </section>
 
-  <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/254707067039?text=Hi%20Basil%2C%20I%27m%20interested%20in%20your%20web%20design%20services." 
-     class="whatsapp-float" 
-     target="_blank" 
-     aria-label="Chat with Basil on WhatsApp">
-    <img src="images/whatsapicon.jpeg" alt="WhatsApp icon" />
+  <a class="whatsapp-float" href="https://wa.me/254707067039" target="_blank">
+    <img src="images/whatsapicon.jpeg" alt="Chat on WhatsApp">
   </a>
 
-  <footer role="contentinfo">
-    <p>Crafted in Kenya · Designed with clarity · Let’s build something beautiful</p>
+  <footer class="footer">
+    <p>Crafted in Kenya · Designed with clarity · Let’s build something beautiful, 2025 Maxim Basil. All rights reserved. ©</p>
   </footer>
+
 </body>
-</html>
 </html>
