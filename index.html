@@ -45,9 +45,24 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      background: url('images/doodle2.jpg') no-repeat center;
-      background-size: contain;
     }
+  .about h2 {
+  font-size: 2.8em;
+  font-weight: bold;
+  color: maroon;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #ddd;
+}
+
+.about p {
+  font-size: 1.3em;
+  font-weight: 650;
+  max-width: 800px;
+  text-align: center;
+  line-height: 1.8;
+  color: #222;
+  padding: 0 20px;
+}
 
     .about img {
       width: 180px;
@@ -56,6 +71,27 @@
       margin: 10px;
       object-fit: cover;
     }
+    .profile-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; /* ensures it still looks good on mobile */
+  margin-bottom: 20px;
+}
+
+.profile-images img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.profile-images img:hover {
+  transform: scale(1.05);
+}
 
     .packages {
       background: url('images/doodle.jpeg') no-repeat center center;
@@ -192,11 +228,13 @@
   </header>
 
   <section class="about">
-    <h2>My Story</h2>
+  <h2>My Story</h2>
+  <div class="profile-images">
     <img src="images/profile1.jpg" alt="Maxim Basil">
     <img src="images/profile2.jpg" alt="Maxim Basil">
-    <p>I’m a Kenyan creative blending code, emotion, and art to create web experiences that feel alive. This is more than design — it's healing, expression, and depth through digital space.</p>
-  </section>
+  </div>
+  <p>I’m a Kenyan creative blending code, emotion, and art to create web experiences that feel alive. This is more than design — it's healing, expression, and depth through digital space.</p>
+</section>
 
   <section class="packages">
     <h2>What I Can Build for You</h2>
@@ -247,3 +285,4 @@
 
 </body>
 </html>
+
