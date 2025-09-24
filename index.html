@@ -1,289 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Basil’s soulful digital portfolio — a fusion of creative design, deep storytelling, and colorful expression." />
-  <meta name="keywords" content="Basil, artist, web design, portfolio, creative expression, storytelling, Kenya, doodle art, graffiti" />
-  <meta name="author" content="Maxim Basil" />
-  <title>Maxim Basil | Artist & Web Developer</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Maxim Basil | Professional web developer and designer building SEO-optimized portfolio sites, business landing pages, and e-commerce websites that convert.">
+  <meta name="keywords" content="web developer Kenya, portfolio website, business landing page, e-commerce developer, SEO websites, Maxim Basil">
+  <meta name="author" content="Maxim Basil">
+  <title>Maxim Basil | Web Developer & Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('images/doodle1.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #333;
-    }
+    body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: #fafafa; color: #222; }
+    header { background: #1a1a1a; color: white; padding: 40px 20px; text-align: center; }
+    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    header p { font-size: 1.2rem; color: #ccc; }
 
-    header {
-      background-color: rgba(255, 255, 255, 0.85);
-      text-align: center;
-      padding: 50px 20px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 3em;
-      color: maroon;
-    }
-
-    header p {
-      font-size: 1.2em;
-      color: #444;
-    }
-
-    section {
-      padding: 60px 20px;
-      margin: 20px;
-      border-radius: 10px;
-      background-color: rgba(255, 255, 255, 0.9);
-    }
-
-    .about {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  .about h2 {
-  font-size: 2.8em;
-  font-weight: bold;
-  color: maroon;
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 2px #ddd;
-}
-
-.about p {
-  font-size: 1.3em;
-  font-weight: 650;
-  max-width: 800px;
-  text-align: center;
-  line-height: 1.8;
-  color: #222;
-  padding: 0 20px;
-}
-
-    .about img {
-      width: 180px;
-      height: auto;
-      border-radius: 10px;
-      margin: 10px;
-      object-fit: cover;
-    }
-    .profile-images {
+    .social-links {
+  margin-top: 10px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap; /* ensures it still looks good on mobile */
-  margin-bottom: 20px;
+  gap: 12px;
 }
 
-.profile-images img {
-  width: 200px;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
+.social-links a img {
+  width: 28px;
+  height: 28px;
+  filter: grayscale(20%);
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.profile-images img:hover {
-  transform: scale(1.05);
+.social-links a img:hover {
+  transform: scale(1.15);
+  filter: grayscale(0%);
 }
 
-    .packages {
-      background: url('images/doodle.jpeg') no-repeat center center;
-      background-size: cover;
-      color: #fff;
-    }
 
-    .packages h2 {
-      text-align: center;
-      font-size: 2.5em;
-      color: gold;
-    }
+    .hero { display: flex; flex-direction: column; align-items: center; padding: 40px 20px; text-align: center; }
+    .hero img { max-width: 220px; border-radius: 50%; margin-bottom: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
+    .hero h2 { font-size: 2rem; margin-bottom: 10px; }
+    .hero p { max-width: 700px; font-size: 1.1rem; line-height: 1.6; }
 
-    .package-grid {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
+    .packages { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 40px 20px; }
+    .package { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .package h3 { margin-top: 0; color: #b33; font-size: 1.5rem; }
+    .package p { line-height: 1.6; }
+    .package ul { list-style: none; padding: 0; margin: 15px 0; }
+    .package ul li::before { content: '✅ '; }
+    .package .price { font-weight: 700; font-size: 1.1rem; color: #333; margin-top: 10px; display: block; }
 
-    .package {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 30px;
-      border-radius: 12px;
-      width: 280px;
-      text-align: center;
-    }
+    .seo-section { background: #fff6f6; padding: 40px 20px; text-align: center; }
+    .seo-section h2 { font-size: 2rem; margin-bottom: 15px; }
+    .seo-section p { max-width: 700px; margin: 0 auto; font-size: 1.1rem; }
 
-    .package h3 {
-      color: #f4c542;
-    }
+    .reviews { background: #f0f0f0; padding: 40px 20px; text-align: center; }
+    .reviews h2 { font-size: 2rem; margin-bottom: 20px; }
+    .review-placeholder { font-style: italic; color: #666; }
 
-    .seo {
-      background: url('images/doodle1.jpg') no-repeat center center;
-      background-size: cover;
-      color: #fff;
-    }
-
-    .seo h2 {
-      text-align: center;
-      font-size: 2.5em;
-      color: #f9f9f9;
-    }
-
-    .seo p {
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
-      background-color: rgba(0,0,0,0.6);
-      border-radius: 10px;
-      font-size: 1.05em;
-      line-height: 1.7;
-    }
-
-    .faq {
-      background: url('images/doodle.jpg') no-repeat center;
-      background-size: cover;
-      background-color: #fff7f0;
-      padding: 60px 20px;
-      margin: 40px 0;
-      border-radius: 12px;
-      color: #333;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    }
-
-    .faq h2 {
-      text-align: center;
-      font-size: 2.5em;
-      color: orange;
-      margin-bottom: 40px;
-    }
-
-    .faq h3::before {
-      content: '❓';
-      margin-right: 10px;
-      color: #ff6347;
-    }
-
-    .faq h3 {
-      font-size: 1.4em;
-      margin-top: 30px;
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-    }
-
-    .faq p {
-      font-size: 1.05em;
-      line-height: 1.6;
-      margin-bottom: 25px;
-      color: #555;
-      padding-left: 5px;
-    }
-
-    .footer {
-      background-color: maroon;
-      color: #fff;
-      text-align: center;
-      padding: 30px 10px;
-    }
-
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 1000;
-    }
-
-    .whatsapp-float img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      transition: transform 0.3s;
-    }
-
-    .whatsapp-float img:hover {
-      transform: scale(1.1);
-    }
-
-    @media (max-width: 768px) {
-      .package-grid {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
+    footer { background: #1a1a1a; color: #ccc; text-align: center; padding: 20px; font-size: 0.9rem; }
+    footer a { color: #f9c74f; text-decoration: none; margin: 0 5px; }
   </style>
 </head>
-
 <body>
 
   <header>
     <h1>Maxim Basil</h1>
-    <p>Artist | Web Developer | Strategy Consultant</p>
+    <div class="social-links">
+    <a href="https://www.instagram.com/getitwith_basil/" target="_blank" aria-label="Instagram">
+      <img src="images/instagram-icon.png" alt="Instagram icon">
+    </a>
+    <a href="https://www.linkedin.com/in/maximbasil/" target="_blank" aria-label="LinkedIn">
+      <img src="images/linkedin-icon.png" alt="LinkedIn icon">
+    </a>
+  </div>
+    <p>Web Developer | Creative Strategist | Storytelling Designer</p>
   </header>
 
-  <section class="about">
-  <h2>My Story</h2>
-  <div class="profile-images">
-    <img src="images/profile1.jpg" alt="Maxim Basil">
-    <img src="images/profile2.jpg" alt="Maxim Basil">
-  </div>
-  <p>I’m a Kenyan creative blending code, emotion, and art to create web experiences that feel alive. This is more than design — it's healing, expression, and depth through digital space.</p>
-</section>
+  <section class="hero">
+    <img src="images/profile1.jpg" alt="Maxim Basil working on a laptop, focused on coding">
+    <h2>Hi, I'm Maxim Basil</h2>
+    <p>I craft clean, scalable, and SEO-friendly websites. From personal portfolios to e-commerce stores, I blend design and code to create digital experiences that actually convert visitors into clients.</p>
+  </section>
 
   <section class="packages">
-    <h2>What I Can Build for You</h2>
-    <div class="package-grid">
-      <div class="package">
-        <h3>🎨 Portfolio Website</h3>
-        <p>1 elegant, artsy, expressive personal website tailored for your needs<br>starting KSh14,999</p>
-      </div>
-      <div class="package">
-        <h3>🛒 Business Landing Pages</h3>
-        <p>SEO-optimized 3–5 landing pages<br>starting KSh24,999</p>
-      </div>
-      <div class="package">
-        <h3>🛍️ E-commerce Site</h3>
-        <p>Up to 10 Pages + Blog + SEO<br>starting KSh54,999</p>
-      </div>
+    <div class="package">
+      <h3>🎨 Portfolio Website</h3>
+      <p>Perfect for artists, freelancers, and personal brands who want an online presence that feels authentic and professional.</p>
+      <ul>
+        <li>Custom responsive design</li>
+        <li>SEO-ready structure</li>
+        <li>Social media integration</li>
+      </ul>
+      <span class="price">Starting at USD 154</span>
+    </div>
+
+    <div class="package">
+      <h3>🛒 Business Landing Pages</h3>
+      <p>High-converting, keyword-rich landing pages built to rank and bring you leads.</p>
+      <ul>
+        <li>5 SEO-optimized pages</li>
+        <li>WhatsApp + contact form integration</li>
+        <li>Google Analytics setup</li>
+      </ul>
+      <span class="price">Starting at USD 309</span>
+    </div>
+
+    <div class="package">
+      <h3>🛍️ E-commerce Website</h3>
+      <p>Full-featured online shop with payment integration and product management made simple.</p>
+      <ul>
+        <li>Secure checkout (M-Pesa, PayPal, Cards)</li>
+        <li>SEO + speed optimization</li>
+        <li>Training for product updates</li>
+      </ul>
+      <span class="price">Starting at USD 696</span>
     </div>
   </section>
 
-  <section class="seo">
-    <h2>What is SEO? Why does it matter</h2>
-    <p>
-      SEO stands for Search Engine Optimization. It's how your website becomes visible on Google. A site without SEO is like a billboard in the desert — no one sees it.
-      <br><br>
-      After your site is built, SEO helps it get found through strategic keywords, metadata, site structure, page speed, mobile optimization, and more.
-      <br><br>
-      With an SEO strategy, your site becomes a living business tool: discoverable, relevant, and visible. From Google Maps listings to blog traffic, SEO connects your audience to your business.
-    </p>
+  <section class="seo-section">
+    <h2>Built for SEO & Scalability</h2>
+    <p>Every site I create is designed to be fast, mobile-friendly, and optimized for Google search — so you get better online visibility, higher rankings, and long-term scalability for your business.</p>
   </section>
 
-  <section class="faq" id="faq">
-    <h2>Frequently Asked Questions</h2>
-    <h3>How long does it take to build a website?</h3>
-    <p>Most projects take between 3 to 20 days depending on complexity and assets provided.</p>
-    <h3>How do I contact you after the site is live?</h3>
-    <p>You’ll have full access — and you can always reach me via WhatsApp or email for updates or support.</p>
-    <h3>Will my site be SEO-ready?</h3>
-    <p>Yes — every project includes on-page SEO optimization for mobile-friendliness, meta tags, and performance.</p>
+  <section class="reviews">
+    <h2>What Clients Say</h2>
+    <p class="review-placeholder">⭐ Client reviews coming soon! (Easy to update here later)</p>
   </section>
 
-  <a class="whatsapp-float" href="https://wa.me/254707067039" target="_blank">
-    <img src="images/whatsapicon.jpeg" alt="Chat Basil on WhatsApp">
-  </a>
-
-  <footer class="footer">
-    <p>Crafted in Kenya · Designed with clarity · Let’s build something beautiful, 2025 Maxim Basil. All rights reserved. ©</p>
+  <footer>
+    <p>&copy; 2025 Maxim Basil | <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Contact</a></p>
   </footer>
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Maxim Basil Web Development",
+    "image": "https://maximbasil.github.io/friendly-fortnight/images/profile1.jpg",
+    "description": "Web developer creating portfolio sites, landing pages, and e-commerce websites with SEO in mind.",
+    "review": [
+      {
+        "@type": "Review",
+        "author": "Client Name",
+        "reviewBody": "This is where your first client testimonial will go.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        }
+      }
+    ]
+  }
+  </script>
 </body>
 </html>
-
 
