@@ -1,155 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Maxim Basil | Professional web developer and designer building SEO-optimized portfolio sites, business landing pages, and e-commerce websites that convert.">
-  <meta name="keywords" content="web developer Kenya, portfolio website, business landing page, e-commerce developer, SEO websites, Maxim Basil">
-  <meta name="author" content="Maxim Basil">
-  <title>Maxim Basil | Web Developer & Designer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: #fafafa; color: #222; }
-    header { background: #1a1a1a; color: white; padding: 40px 20px; text-align: center; }
-    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
-    header p { font-size: 1.2rem; color: #ccc; }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Maxim Basil — Web Developer, Creative Strategist, and Artist building high-performing websites that fuse design, emotion, and storytelling." />
+  <meta name="keywords" content="Maxim Basil, web developer, website design Kenya, portfolio, SEO expert, business websites, storytelling websites, ecommerce websites Kenya" />
+  <meta name="author" content="Maxim Basil" />
+  <title>Maxim Basil | Web Developer & Creative Strategist</title>
 
-    .social-links {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-}
-
-.social-links a img {
-  width: 28px;
-  height: 28px;
-  filter: grayscale(20%);
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.social-links a img:hover {
-  transform: scale(1.15);
-  filter: grayscale(0%);
-}
-
-
-    .hero { display: flex; flex-direction: column; align-items: center; padding: 40px 20px; text-align: center; }
-    .hero img { max-width: 220px; border-radius: 50%; margin-bottom: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
-    .hero h2 { font-size: 2rem; margin-bottom: 10px; }
-    .hero p { max-width: 700px; font-size: 1.1rem; line-height: 1.6; }
-
-    .packages { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 40px 20px; }
-    .package { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-    .package h3 { margin-top: 0; color: #b33; font-size: 1.5rem; }
-    .package p { line-height: 1.6; }
-    .package ul { list-style: none; padding: 0; margin: 15px 0; }
-    .package ul li::before { content: '✅ '; }
-    .package .price { font-weight: 700; font-size: 1.1rem; color: #333; margin-top: 10px; display: block; }
-
-    .seo-section { background: #fff6f6; padding: 40px 20px; text-align: center; }
-    .seo-section h2 { font-size: 2rem; margin-bottom: 15px; }
-    .seo-section p { max-width: 700px; margin: 0 auto; font-size: 1.1rem; }
-
-    .reviews { background: #f0f0f0; padding: 40px 20px; text-align: center; }
-    .reviews h2 { font-size: 2rem; margin-bottom: 20px; }
-    .review-placeholder { font-style: italic; color: #666; }
-
-    footer { background: #1a1a1a; color: #ccc; text-align: center; padding: 20px; font-size: 0.9rem; }
-    footer a { color: #f9c74f; text-decoration: none; margin: 0 5px; }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Maxim Basil</h1>
-    <div class="social-links">
-    <a href="https://www.instagram.com/getitwith_basil/" target="_blank" aria-label="Instagram">
-      <img src="images/instagram-icon.png" alt="Instagram icon">
-    </a>
-    <a href="https://www.linkedin.com/in/maximbasil/" target="_blank" aria-label="LinkedIn">
-      <img src="images/linkedin-icon.png" alt="LinkedIn icon">
-    </a>
-  </div>
-    <p>Web Developer | Creative Strategist | Storytelling Designer</p>
-  </header>
-
-  <section class="hero">
-    <img src="images/profile1.jpg" alt="Maxim Basil working on a laptop, focused on coding">
-    <h2>Hi, I'm Maxim Basil</h2>
-    <p>I craft clean, scalable, and SEO-friendly websites. From personal portfolios to e-commerce stores, I blend design and code to create digital experiences that actually convert visitors into clients.</p>
-  </section>
-
-  <section class="packages">
-    <div class="package">
-      <h3>🎨 Portfolio Website</h3>
-      <p>Perfect for artists, freelancers, and personal brands who want an online presence that feels authentic and professional.</p>
-      <ul>
-        <li>Custom responsive design</li>
-        <li>SEO-ready structure</li>
-        <li>Social media integration</li>
-      </ul>
-      <span class="price">Starting at USD 154</span>
-    </div>
-
-    <div class="package">
-      <h3>🛒 Business Landing Pages</h3>
-      <p>High-converting, keyword-rich landing pages built to rank and bring you leads.</p>
-      <ul>
-        <li>5 SEO-optimized pages</li>
-        <li>WhatsApp + contact form integration</li>
-        <li>Google Analytics setup</li>
-      </ul>
-      <span class="price">Starting at USD 309</span>
-    </div>
-
-    <div class="package">
-      <h3>🛍️ E-commerce Website</h3>
-      <p>Full-featured online shop with payment integration and product management made simple.</p>
-      <ul>
-        <li>Secure checkout (M-Pesa, PayPal, Cards)</li>
-        <li>SEO + speed optimization</li>
-        <li>Training for product updates</li>
-      </ul>
-      <span class="price">Starting at USD 696</span>
-    </div>
-  </section>
-
-  <section class="seo-section">
-    <h2>Built for SEO & Scalability</h2>
-    <p>Every site I create is designed to be fast, mobile-friendly, and optimized for Google search — so you get better online visibility, higher rankings, and long-term scalability for your business.</p>
-  </section>
-
-  <section class="reviews">
-    <h2>What Clients Say</h2>
-    <p class="review-placeholder">⭐ Client reviews coming soon! (Easy to update here later)</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Maxim Basil | <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Contact</a></p>
-  </footer>
-
+  <!-- Person Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Maxim Basil Web Development",
-    "image": "https://maximbasil.github.io/friendly-fortnight/images/profile1.jpg",
-    "description": "Web developer creating portfolio sites, landing pages, and e-commerce websites with SEO in mind.",
-    "review": [
+    "@type": "Person",
+    "name": "Maxim Basil",
+    "url": "https://maximbasil.github.io/friendly-fortnight/",
+    "sameAs": [
+      "https://www.instagram.com/getitwith_basil/",
+      "https://www.linkedin.com/in/maximbasil/"
+    ],
+    "jobTitle": "Web Developer & Creative Strategist",
+    "description": "Helping brands and individuals create websites that blend code, art, and SEO for lasting impact."
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
       {
-        "@type": "Review",
-        "author": "Client Name",
-        "reviewBody": "This is where your first client testimonial will go.",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
+        "@type": "Question",
+        "name": "How long does a project take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most projects are delivered in 3–20 days depending on scope and content readiness."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will my site be SEO-friendly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! Every site includes mobile-friendly, fast-loading, SEO-optimized pages."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if I need updates later?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can always reach out via WhatsApp or email — support doesn’t stop after launch."
         }
       }
     ]
   }
   </script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('images/doodle1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #222;
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.9);
+      text-align: center;
+      padding: 60px 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3.2em;
+      color: maroon;
+      font-weight: 800;
+    }
+
+    .social-links {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .social-links a img {
+      width: 28px;
+      height: 28px;
+      filter: grayscale(20%);
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .social-links a img:hover {
+      transform: scale(1.15);
+      filter: grayscale(0%);
+    }
+
+    header p {
+      font-size: 1.3em;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 60px 20px;
+      margin: 20px auto;
+      border-radius: 12px;
+      background-color: rgba(255, 255, 255, 0.92);
+      max-width: 1100px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .about {
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 2.6em;
+      color: maroon;
+      margin-bottom: 15px;
+    }
+
+    .about p {
+      font-size: 1.25em;
+      font-weight: 600;
+      line-height: 1.8;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .profile-images {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .profile-images img {
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-images img:hover {
+      transform: scale(1.05);
+    }
+
+    .packages h2 {
+      text-align: center;
+      font-size: 2.4em;
+      color: maroon;
+      margin-bottom: 30px;
+    }
+
+    .package-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .package {
+      background-color: rgba(0, 0, 0, 0.75);
+      color: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .package:hover {
+      transform: translateY(-5px);
+    }
+
+    .package h3 {
+      color: gold;
+      margin-bottom: 10px;
+    }
+
+    .package p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .seo h2 {
+      text-align: center;
+      font-size: 2.4em;
+      color: maroon;
+      margin-bottom: 20px;
+    }
+
+    .seo p {
+      background-color: rgba(0,0,0,0.7);
+      color: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      max-width: 850px;
+      margin: auto;
+      line-height: 1.8;
+    }
+
+    .reviews h2 {
+      text-align: center;
+      font-size: 2.4em;
+      color: maroon;
+    }
+
+    .review-placeholder {
+      text-align: center;
+      font-style: italic;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    .faq h2 {
+      text-align: center;
+      font-size: 2.3em;
+      color: orange;
+      margin-bottom: 25px;
+    }
+
+    .faq details {
+      max-width: 700px;
+      margin: 10px auto;
+      padding: 10px 15px;
+      border-radius: 8px;
+      background-color: rgba(255,255,255,0.8);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+
+    .faq summary {
+      font-weight: 600;
+      font-size: 1.2em;
+      color: #333;
+    }
+
+    .faq p {
+      margin-top: 8px;
+      font-size: 1.05em;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: maroon;
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.95em;
+    }
+
+    /* Optimized WhatsApp Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border-radius: 30px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.9em;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      transition: transform 0.3s ease;
+      z-index: 1000;
+    }
+
+    .whatsapp-float img {
+      width: 26px;
+      height: 26px;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.08);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Maxim Basil</h1>
+
+    <!-- Social Links under the H1 -->
+    <div class="social-links">
+      <a href="https://www.instagram.com/getitwith_basil/" target="_blank" aria-label="Instagram">
+        <img src="images/instagram-icon.png" alt="Instagram">
+      </a>
+      <a href="https://www.linkedin.com/in/maximbasil/" target="_blank" aria-label="LinkedIn">
+        <img src="images/linkedin-icon.png" alt="LinkedIn">
+      </a>
+    </div>
+
+    <p>Web Developer | Creative Strategist | Storytelling Designer</p>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <div class="profile-images">
+      <img src="images/profile1.jpg" alt="Maxim Basil working on a laptop">
+      <img src="images/profile2.jpg" alt="Maxim Basil smiling at his creative workspace">
+    </div>
+    <p>I build websites that do more than just look good — they work, they speak, and they convert. As a Kenyan creative with a passion for code and design, I transform ideas into interactive, optimized, and emotionally resonant digital experiences.</p>
+  </section>
+
+  <section class="packages">
+    <h2>What I Can Build for You</h2>
+    <div class="package-grid">
+      <div class="package">
+        <h3>🎨 Portfolio Website</h3>
+        <p>Custom, mobile-friendly portfolio for artists & freelancers</p>
+        <p>Includes SEO setup & social links</p>
+        <p>Designed to attract clients and showcase your personality</p>
+        <p><strong>Starting KSh 17,000</strong></p>
+      </div>
+      <div class="package">
+        <h3>🛒 Business Landing Pages</h3>
+        <p>3–5 SEO-optimized pages built for conversions</p>
+        <p>Includes WhatsApp contact button & lead forms</p>
+        <p>Google Analytics setup to track growth</p>
+        <p><strong>Starting KSh 30,000</strong></p>
+      </div>
+      <div class="package">
+        <h3>🛍️ E-commerce Website</h3>
+        <p>Up to 10 product pages + blog section</p>
+        <p>Secure checkout (M-Pesa, PayPal, Cards)</p>
+        <p>Training on how to update products & track orders</p>
+        <p><strong>Starting KSh 70,000</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="seo">
+    <h2>Why SEO Matters</h2>
+    <p>Search Engine Optimization (SEO) is what makes your site visible to the right audience. Without SEO, a website is like a masterpiece hidden in a basement — beautiful, but unseen. I build with SEO in mind: keyword research, metadata, mobile optimization, and lightning-fast load speeds. This ensures that when people search for what you offer, your site shows up and stands out.</p>
+  </section>
+
+  <section class="reviews">
+    <h2>Client Reviews</h2>
+    <p class="review-placeholder">⭐⭐⭐⭐⭐ Reviews coming soon — your testimonial could be the first!</p>
+  </section>
+
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <details>
+      <summary>How long does a project take?</summary>
+      <p>Most projects are delivered in 3–7 days depending on scope and content readiness.</p>
+    </details>
+    <details>
+      <summary>Will my site be SEO-friendly?</summary>
+      <p>Yes! Every site includes mobile-friendly, fast-loading, SEO-optimized pages.</p>
+    </details>
+    <details>
+      <summary>What if I need updates later?</summary>
+      <p>You can always reach out via WhatsApp or email — support doesn’t stop after launch.</p>
+    </details>
+  </section>
+
+  <!-- Optimized WhatsApp Button -->
+  <a class="whatsapp-float" href="https://wa.me/254707067039" target="_blank" aria-label="Chat with Basil on WhatsApp">
+    <img src="images/whatsapp-icon.svg" alt="WhatsApp icon">
+    Chat
+  </a>
+<footer>
+<p>&copy; 2025 Maxim Basil | <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Contact</a></p>
+</footer>
+  <script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "LocalBusiness",
+"name": "Maxim Basil Web Development",
+"image": "https://maximbasil.github.io/friendly-fortnight/images/profile1.jpg",
+"description": "Web developer creating portfolio sites, landing pages, and e-commerce websites with SEO in mind.",
+"review": [
+{
+"@type": "Review",
+"author": "Client Name",
+"reviewBody": "This is where your first client testimonial will go.",
+"reviewRating": {
+"@type": "Rating",
+"ratingValue": "5",
+"bestRating": "5"
+}
+}
+]
+}
+</script>
 </body>
 </html>
-
